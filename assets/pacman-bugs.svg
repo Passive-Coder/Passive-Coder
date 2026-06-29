@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+  <title id="title">Passive-Coder Pac-Man bug chase</title>
+  <desc id="desc">Animated maze where Sree Raj's GitHub avatar loops through a neon Pac-Man board and eats software bugs.</desc>
+  <defs>
+    <pattern id="pellets" width="48" height="42" patternUnits="userSpaceOnUse">
+      <circle cx="22" cy="20" r="4" fill="#fffbe8"/>
+    </pattern>
+    <clipPath id="avatarClip">
+      <circle cx="20" cy="20" r="15"/>
+    </clipPath>
+    <path id="runPath" d="M790 304H640V252H520V198H662V142H522V88H782V142H842V302H790V304Z"/>
+    <g id="bug">
+      <path d="M9 7 6 4M15 7l3-3M5 12H2M22 12h-3M6 17l-3 2M18 17l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="12" cy="13" rx="7" ry="6" fill="currentColor"/>
+      <path d="M12 7v12" stroke="#121212" stroke-width="1.4" stroke-linecap="round" opacity=".55"/>
+      <circle cx="9" cy="11" r="1.4" fill="#fff"/>
+      <circle cx="15" cy="11" r="1.4" fill="#fff"/>
+    </g>
+    <g id="player">
+      <circle cx="20" cy="20" r="20" fill="#ffe600"/>
+      <circle cx="20" cy="20" r="17" fill="#05070d"/>
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAE/klEQVR4nOxa2VPb1hc+50rC8oJBgAkEhyQ/svySrkln2ulMH9KH9j/oP5tp8tDOhD70pUPLpNkggB2aesGSQNvVPR1JQBZEBkmXMUz8vQDGPvd8957lu0dWl+7+BOcZKtOqw/ahENhpL0BEp2pflW4x8hgJiJUqE3p1kqFGQIG/65hdIXwABABEacvJJUCxf1irN8fKNdcZBL6vaInHWn1mEZANOi9EGMrzXyqBOFiEMfd/x+rpbKp5/TumqIHvIDJtrOR7bqf9lzF70+ptBJ4JiAgSiEgiQESRO2TM3bTMTnPpa1XVt9d/t3otEfqAoKiVycbihcU7Znd93Gia3Q3O96SsrEw3vyxuJY56rEwueK49v3hXCP5y9YEg3rj0+fT87UptxnO6dr9t9bYalz61drYrtSnH6kjJBDkEAKMDGJ+cUxVtfPry+up9vWJc/ezHUqUuuFczFozZG1a/7TkD8981x+4IwfVy3fdsLExCUhkl1GuGY3WN+Vu97VXB+ezlLwQP1lYeWL2ttT/vE4nG5TsIJEIfAdy93ljZiJO+KGQlMbl7FiLTqxOtp9uI1H66jEwpjzdmr3zFn/zSevaIKUry1jh5GYCAM5TECERcK9URMAgcABZ4FgAGnl2uTpndTaCQ4D2HeXz+RQ9BDgGMW5PgvtlZBwrjwI6Dk0TIAyABR4JdhCDlEGT2gTBwt549ihLiBG4NOmtS2plMAgebfCLH4jdLoHDqYu60MSIwbIwIDBvnnkBKGY27C0LS7QuKLUqEHpNQMAmB+FHxl0IASSxcv0cUooxOSYgLS98WlAwEpFcnX6z8DBS896/URsYARfvpMmAo5dJUGNF16eK1bzBtF859DowIDBvZxBwlUUgY6f99NUZIhQY9FFuIrBEcCLwM1jKrUQJQNX1q7oaiVuydlt3fOJF6PtYaISrGhZtj1bprdnY6L4BEpt3ISIBAUdQrn/wQ3WiRjPml1+t/dNsr+RhE50nKpVvfVycWogoze6Ncn3n1/LdMRrLlAALUpxfHykZ8r0UgNtO8Dahk9PwABJXxmerExWjLEQnQaFxTS7VMNrIRIARF0Q+7EgIypiLLXwkUTXvzBxIhMiVbUGRcm8DqbQoREFGS0WZvi8L3u+PJYZv/cH8XEnMA7m7fdwaZLGQkgBh4Zuvxr+5uh/v2zusnr54tZ7PwLkTov3z80B60wmDP6m1u/P0AMo7js51XXDWZPWjZKy2Kql68WO4aisAI/d3+xurD2LZIMisTMpfRwzJd/FaO8LbDdGA7m81z34lHBIaNj5cAEQnar3kFB7RJT8n5ODMnAQKcmLkadWVKlGR+CAJEtd74H+aSJDlnowhk9rfqRpOpOomAe7bn2jxwolOJxHFUDY9s6JsXEFVUtZJeLenjyEoE3Oq3CXgOXZt7uIsg+KCzHj8cU7VStVSerNbnEFksy5KiTiREIjkQWSSZ4uYXq0Aect9zdwe9TRHyiBHmVOVFptMHMw4S3LW4Y8WvEaTs/VufgXeOIqK2byZnHBYfr+O7P0/SnzHlt7z4eMvoWcEHQohkPAWVBDrWmWMIxF85ORwUDB/7mZXiTCoBCkW4eOseUuHhrhxEu6mqYwQpX3NJP4Ht58tnZOsPQfEw6miRSyOQXFXOTgIkOGZD08brH/zAsHBcszv3ZXREYNgYERg2RgSGjRGBYePcE/gvAAD//66JDIDmp3rJAAAAAElFTkSuQmCC" x="5" y="5" width="30" height="30" clip-path="url(#avatarClip)"/>
+      <path d="M34 20 43 9 43 31Z" fill="#05070d">
+        <animate attributeName="d" dur=".42s" repeatCount="indefinite" values="M34 20 43 8 43 32Z;M37 20 43 18 43 22Z;M34 20 43 8 43 32Z"/>
+      </path>
+    </g>
+  </defs>
+
+  <rect width="920" height="420" fill="#02040b"/>
+  <rect x="18" y="18" width="884" height="292" fill="url(#pellets)" opacity=".95"/>
+  <rect x="330" y="126" width="250" height="118" fill="#02040b"/>
+  <rect x="62" y="64" width="114" height="202" fill="#02040b"/>
+  <rect x="740" y="64" width="120" height="204" fill="#02040b"/>
+
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M22 22H898V306H22ZM96 74H180V118M96 238H180V194M244 74H388M244 238H388M532 74H676M532 238H676M742 74H824V118M742 238H824V194M308 142H418V198H308ZM506 142H616V198H506ZM210 142H254M666 142H710M210 194H254M666 194H710" stroke="#0757ff" stroke-width="13"/>
+    <path d="M22 22H898V306H22ZM96 74H180V118M96 238H180V194M244 74H388M244 238H388M532 74H676M532 238H676M742 74H824V118M742 238H824V194M308 142H418V198H308ZM506 142H616V198H506ZM210 142H254M666 142H710M210 194H254M666 194H710" stroke="#02040b" stroke-width="7"/>
+    <use href="#runPath" stroke="#00d4ff" stroke-width="2" opacity=".45"/>
+  </g>
+
+  <g transform="translate(598 240)" color="#ff5c8a">
+    <use href="#bug"/>
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="1;1;0;0;1" keyTimes="0;0.16;0.20;0.94;1"/>
+  </g>
+  <g transform="translate(522 186)" color="#8cff66">
+    <use href="#bug"/>
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="1;1;0;0;1" keyTimes="0;0.30;0.34;0.94;1"/>
+  </g>
+  <g transform="translate(650 130)" color="#ffb84d">
+    <use href="#bug"/>
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="1;1;0;0;1" keyTimes="0;0.49;0.53;0.94;1"/>
+  </g>
+  <g transform="translate(780 132)" color="#7aa2ff">
+    <use href="#bug"/>
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="1;1;0;0;1" keyTimes="0;0.69;0.73;0.94;1"/>
+  </g>
+
+  <g>
+    <use href="#player" transform="translate(-20 -20)">
+      <animateMotion dur="8s" repeatCount="indefinite" rotate="0" path="M790 304H640V252H520V198H662V142H522V88H782V142H842V302H790V304Z"/>
+    </use>
+  </g>
+
+  <text x="36" y="366" fill="#fff06a" font-family="Courier New, monospace" font-size="34" font-weight="700">SCORE: 37 BUGS EATEN</text>
+  <text x="616" y="366" fill="#00d4ff" font-family="Courier New, monospace" font-size="20">MODE: DEBUG LOOP</text>
+  <text x="36" y="394" fill="#8cff66" font-family="Courier New, monospace" font-size="16">build - test - fix - ship - repeat</text>
+</svg>
